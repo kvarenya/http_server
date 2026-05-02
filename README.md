@@ -1,4 +1,4 @@
-# tiny-httpd 🛰️
+# http_server
 
 A minimal HTTP/1.1 server written in C from scratch. Built as a summer project for fun
 
