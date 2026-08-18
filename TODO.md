@@ -1,10 +1,6 @@
-# TODO — tiny-httpd upgrade roadmap
-
-Roughly ordered from "do this weekend" to "deep rabbit hole".
+# TODO
 
 ---
-
-## 🟢 Easy wins  (a few hours each)
 
 - [ ] **respond_file()** — serve files from `static/`
   - detect Content-Type from extension (`.html`, `.css`, `.js`, `.png` …)
@@ -21,10 +17,6 @@ Roughly ordered from "do this weekend" to "deep rabbit hole".
 
 - [ ] **Custom 404 / 405 pages**
   - call `router.not_found = my_handler` after `router_init()`
-
----
-
-## 🟡 Intermediate  (a day or two each)
 
 - [ ] **Chunked / multi-recv request reading**
   - current code assumes the whole request fits in one `recv()`
@@ -47,10 +39,6 @@ Roughly ordered from "do this weekend" to "deep rabbit hole".
   ```
 
 - [ ] **URL decode** — `%20` → space, `%2F` → `/` in URI and query params
-
----
-
-## 🔴 Advanced  (weekend project each)
 
 - [ ] **epoll / kqueue event loop** — replace `select()` for >1k connections
   - Linux: `epoll_create1`, `epoll_ctl`, `epoll_wait`
@@ -75,7 +63,7 @@ Roughly ordered from "do this weekend" to "deep rabbit hole".
 
 ---
 
-## 📚 References
+## I should read these
 
 - RFC 7230 — HTTP/1.1 Message Syntax  
   https://datatracker.ietf.org/doc/html/rfc7230
